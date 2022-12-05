@@ -5,40 +5,48 @@
         <meta charset="UTF-8">
         <meta name="author" content="Faleye Korede">
         <meta name="description" content="Blog website">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0>
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/designsystem.css">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/media.css">
+        <meta name="viewport" content="width=devece-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="./styles/designsystem.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/media.css">
     </head>
     <body>
-        <div class="navbar">
+        <header class="navbar">
             <nav class="container">
-                <img class="nav-logo" src="images/logo-black.png" alt="logo">
+                <img class="nav-logo" src="./images/logo-black.png" alt="logo">
                 <span class="nav-btn-container">
                     <a class="nav-btn" href="index.html">Home</a>
                     <a class="nav-btn" href="#">About</a>
                     <a class="nav-btn" href="#">Contact</a>
                 </span>
             </nav>
-        </div>
+        </header>
         <div id="page-width">
             <div class="content" id="post-grid-layout">
-                <div id="main" class="card">
+                <article id="main" class="card">
                     <div class="tag">tag</div>
                     <h2 class="">Post Title</h2> 
                     <small>by Korede Faleye | 5 mins</small>
-                    <img src="images/image-rep.png" alt="Post image">
+                    <figure>
+                    <img class="post-image" src="images/image-rep.png" alt="Post image">
+                    <figcaption class="caption black-2-text">
+                        <em>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+                        </em>
+                    </figcaption>
+                    </figure>
                     <div class="black-text">
                         <div class="share">
                         <strong> Share: </strong>
-                        <a href="#"><img src="images/fb-share.png" alt="Facebook" width="20"></a>
-                        <a href="#"><img src="images/twitter-share.png" alt="Twitter" width="22"></a>
-                        <a href="#"><img src="images/insta-share.png" alt="Instagram" width="22"></a>
+                        <a href="#"><img src="images/fb-share.png" alt="Facebook" class="width-20px"></a>
+                        <a href="#"><img src="images/twitter-share.png" alt="Twitter" class="width-22px"></a>
+                        <a href="#"><img src="images/insta-share.png" alt="Instagram" class="width-22px"></a>
                         </div>
                     </div>
 
-                    <p class="post-text">
+                    <div class="post-text">
+                        <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 Nunc viverra imperdiet enim. Fusce est. <strong>Vivamus</strong> a tellus.
 <u>Pellentesque</u> habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
@@ -101,29 +109,30 @@ Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet euismod, purus
 Etiam eget dui. <u>Aliquam erat volutpat</u>. Sed at lorem in nunc porta tristique.
 Proin nec augue. Quisque aliquam tempor magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 Purus, tristique ac, tempus eget, egestas quis, mauris.
-                    </p>
-                </div>
+                        </p>
+                    </div>
+                </article>
 
-                <div id="side-bar">
+                <aside id="side-bar">
                     <br>
                     <!--Next Post-->
                     <div class="other-posts">  
                         <h4 class="black-text">Next</h4>
-                    <div class="post-card card">
+                    <figure class="post-card card">
                         <div class="tag">tag</div>
                         <img src="images/image-rep.png" alt="Post Image">
                             <div class="black-text">
                                 <h3 class="post-title">Post Title</h3>
-                                <p>
+                                <figcaption>
                                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
     Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
     Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
     Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                                </p>
+                                </figcaption>
                             </div>
                             <a class="btn primary" href="post.html">read</a>
-                        </div>
+                        </figure>
                     </div>
                 
                     <!--Tags-->
@@ -142,7 +151,7 @@ Purus, tristique ac, tempus eget, egestas quis, mauris.
                             </p>
                             
                         </div>
-                    </div>
+                    </aside>
 
                     <!--Advert-->
                     <div id="advert" class="card">
@@ -159,7 +168,7 @@ Purus, tristique ac, tempus eget, egestas quis, mauris.
         
         
         <!--Footer-->
-        <div class="footer">
+        <footer class="footer">
             <div class="container">
             <img class="footer-logo" src="images/logo-white.png">
 
@@ -175,17 +184,17 @@ Purus, tristique ac, tempus eget, egestas quis, mauris.
             <div class="subscribe-social">
                 <div class="subscribe">
                     <small>Subscribe</small>
-                    <div> <input type="text" placeholder="Your E-mail"><a href="#"><img src="images/mail.png" width="20px"> </a> </div>
+                    <div> <input type="text" placeholder="Your E-mail"><a href="#"><img src="images/mail.png" class="width-20px"> </a> </div>
                 </div>
 
                 <div class="follow">
                     <small>Follow</small>
                     <div>
-                        <a href="#" title="Facebook"><img src="images/fb-page.png" alt="Facebook" width="10px"></a>
-                        <a href="#" title="Twitter"><img src="images/twitter-page.png" alt="Twitter" width="20px"></a>
-                        <a href="#" title="Instagram"><img src="images/insta-page.png" alt="Instagram" width="20px"></a>
+                        <a href="#" title="Facebook"><img src="images/fb-page.png" alt="Facebook" class="width-10px"></a>
+                        <a href="#" title="Twitter"><img src="images/twitter-page.png" alt="Twitter" class="width-20px"></a>
+                        <a href="#" title="Instagram"><img src="images/insta-page.png" alt="Instagram" class="width-20px"></a>
                     </div>
                 </div>
-            </div>
+            </footer>
     </body>
 </html>

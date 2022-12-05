@@ -87,12 +87,22 @@ a{
 }
 
     /* Post Image */
-#main img:nth-child(4) {
+.post-image {
     aspect-ratio: 2/1;
     object-fit: cover;
     object-position: center;
     margin-top: 10px;
     width: 100%;
+}
+.caption {
+    font-size: 0.7em;
+    /* border-bottom: 1px solid lightgrey; */
+    border-top: 1px solid lightgrey;
+    padding: 10px;
+}
+#active-nav {
+    border-bottom: 3px solid #367BF6; 
+    color: #367BF6 !important;
 }
 
     /* Post Title */
@@ -137,6 +147,9 @@ a{
     margin-left: 2px;
     margin: 2px;
 }
+#tags a {
+    margin-bottom: 10px;
+}
 #tags a:hover {
     text-decoration: none;
 }
@@ -147,4 +160,23 @@ a{
     padding: 10px;
     text-align: center;
     font-weight: 700;
+}
+
+.width-100px {
+    width: 100px;
+}
+.width-35px {
+    width: 35px;
+}
+.width-30px {
+    width: 30px;
+}
+.width-22px {
+    width: 22px;
+}
+.width-20px {
+    width: 20px;
+}
+.width-10px {
+    width: 10px;
 }

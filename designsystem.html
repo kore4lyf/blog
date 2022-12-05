@@ -6,21 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <meta name="author" content="Faleye Korede">
         <meta name="description" content="Blog website">
-        <link rel="icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
+        <meta name="viewport" content="width=devece-width, initial-scale=1.0, maximum-scale=1.0">
+        <link rel="icon" href="./images/favicon.ico">
+        <link rel="stylesheet" href="./styles/main.css">
     </head>
     <body>
-        <div class="navbar">
+        <header class="navbar">
             <nav class="container">
-                <img class="nav-logo" src="images/logo-black.png" alt="logo">
+                <img class="nav-logo" src="./images/logo-black.png" alt="logo">
                 <span class="nav-btn-container">
                     <a class="nav-btn" href="index.html">Home</a>
                     <a class="nav-btn" href="#">About</a>
                     <a class="nav-btn" href="#">Contact</a>
                 </span>
             </nav>
-
-        </div>
+        </header>
+        
         <div id="page-width">
                 <div class="content">
                 <h1 class="black-text">Design System</h1>
@@ -304,29 +305,29 @@
                 <div id="components-cards" class="card">
                     <!--CARDS-->
                     <div class="inner-content">
-                        <div class="post-card">
+                        <figure class="post-card">
                             <div class="tag">tag</div>
                             <img src="images/image-rep.png" alt="Post Image">
                             <div class="post-details">
                                 <div class="author">
-                                    <img src="images/avatar.png" alt="Avatar" width="35px">
+                                    <img src="images/avatar.png" alt="Avatar" class="width-35px">
                                     <div class="black-text">
                                         <small> <span class="date">November 8, 2022</span> <b>•</b> <span class="read-time">5 mins</span></small>
                                         <span class="author-name">Korede Faleye</span>
                                     </div>
                                 </div>
-                                <div class="black-text">
+                                <p class="black-text">
                                     <h2 class="post-title">Post Title</h2>
-                                    <p>
+                                    <figcaption>
                                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
 Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
 Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.
 Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-                                    </p>
+                                    </figcaption>
                                 </div>
                                 <a class="btn primary" href="#">read</a>
-                            </div>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -338,8 +339,8 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
                 <div id="components-avatar" class="card">
                     <!--AVARTAR-->
                     <div class="inner-content">
-                    <img src="/blog/images/avatar.png" alt="Avatar" width="100px">
-                    <img src="/blog/images/avatar-1.png" alt="Avatar" width="100px">
+                    <img src="images/avatar.png" alt="Avatar" class="width-100px">
+                    <img src="images/avatar-1.png" alt="Avatar 1" class="width-100px">
                     </div>
                 </div>
 
@@ -401,15 +402,16 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
                             <div class="subscribe-social">
                                 <div class="subscribe">
                                     <small>Subscribe</small>
-                                    <div> <input type="text" placeholder="Your E-mail"><a href="#"><img src="images/mail.png" width="20px"> </a> </div>
+                                    <div> <input type="text" placeholder="Your E-mail"><a href="#"><img src="images/mail.png" class="width-20px"> </a> </div>
                                 </div>
-
+                                
+                                
                                 <div class="follow">
                                     <small>Follow</small>
                                     <div>
-                                        <a href="#" title="Facebook"><img src="images/fb-page.png" alt="Facebook" width="10px"></a>
-                                        <a href="#" title="Twitter"><img src="images/twitter-page.png" alt="Twitter" width="20px"></a>
-                                        <a href="#" title="Instagram"><img src="images/insta-page.png" alt="Instagram" width="20px"></a>
+                                        <a href="#" title="Facebook"><img src="images/fb-page.png" alt="Facebook" class="width-10px"></a>
+                                        <a href="#" title="Twitter"><img src="images/twitter-page.png" alt="Twitter" class="width-20px"></a>
+                                        <a href="#" title="Instagram"><img src="images/insta-page.png" alt="Instagram" class="width-20px"></a>
                                     </div>
                                 </div>
                             </div>
@@ -426,7 +428,7 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
                     <!--AUTHOR INFO-->
                     <div class="inner-content">
                         <div class="author">
-                            <img src="images/avatar.png" alt="Avatar" width="35px">
+                            <img src="images/avatar.png" alt="Avatar" class="width-35px">
                             <div class="black-text">
                                 <small> <span class="date">November 8, 2022</span> <b>•</b> <span class="read-time">5 mins</span></small>
                                 <span class="author-name">Korede Faleye</span>
@@ -434,7 +436,7 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
                         </div>
 
                         <div class="author">
-                            <img src="images/avatar-1.png" alt="Avatar" width="35px">
+                            <img src="images/avatar-1.png" alt="Avatar" class="width-35px">
                             <div class="black-text">
                                 <small> <span class="date">November 8, 2022</span> <b>•</b> <span class="read-time">5 mins</span></small>
                                 <span class="author-name">Korede Faleye</span>
@@ -452,9 +454,9 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
                     <!--SOCIAL SHARING-->
                     <div class="inner-content">
                         <div class="social-sharing">
-                        <a href="#" title="Facebook"><img src="images/fb-share.png" alt="Facebook" width="30px"></a>
-                        <a href="#" title="Twitter"><img src="images/twitter-share.png" alt="Twitter" width="30px"></a>
-                        <a href="#" title="Instagram"><img src="images/insta-share.png" alt="Instagram" width="30px"></a>
+                        <a href="#" title="Facebook"><img src="images/fb-share.png" alt="Facebook" class="width-30px"></a>
+                        <a href="#" title="Twitter"><img src="images/twitter-share.png" alt="Twitter" class="width-30px"></a>
+                        <a href="#" title="Instagram"><img src="images/insta-share.png" alt="Instagram" class="width-30px"></a>
                         </div>
                     </div>
                 </div>
@@ -463,14 +465,14 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
 
                 <br>
                 <br>
-                <div style="overflow: hidden;">
-                    <img style="width: 100%;" src="images/Asset 57-50.jpg">
+                <div class="overflow-hidden">
+                    <img class="width-100pct" src="images/Asset 57-50.jpg">
                 </div>
                 
             </div>
         </div>
 
-        <div class="footer">
+        <footer class="footer">
             <div class="container">
             <img class="footer-logo" src="images/logo-white.png">
 
@@ -485,21 +487,22 @@ Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Ma
 
             <div class="subscribe-social">
                 
-                <small>Subscribe</small>
+                
                 <div class="subscribe">
-                    <div> <input type="text" placeholder="Your E-mail"><a href="#"><img src="images/mail.png" width="20px"> </a> </div>
+                    <small>Subscribe</small>
+                    <div> <input type="text" placeholder="Your E-mail"><a href="#"><img src="images/mail.png" class="width-20px"> </a> </div>
                 </div>
                 
-                <small>Follow</small>
+                
                 <div class="follow">
-                    
+                    <small>Follow</small>
                     <div>
-                        <a href="#" title="Facebook"><img src="images/fb-page.png" alt="Facebook" width="10px"></a>
-                        <a href="#" title="Twitter"><img src="images/twitter-page.png" alt="Twitter" width="20px"></a>
-                        <a href="#" title="Instagram"><img src="images/insta-page.png" alt="Instagram" width="20px"></a>
+                        <a href="#" title="Facebook"><img src="images/fb-page.png" alt="Facebook" class="width-10px"></a>
+                        <a href="#" title="Twitter"><img src="images/twitter-page.png" alt="Twitter" class="width-20px"></a>
+                        <a href="#" title="Instagram"><img src="images/insta-page.png" alt="Instagram" class="width-20px"></a>
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     </body>
 </html>

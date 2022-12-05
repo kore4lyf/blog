@@ -163,7 +163,6 @@ a:hover {
     background: none;
     font-size: 12pt;
     padding: 8px;
-    
 }
 
 
@@ -349,6 +348,7 @@ a:hover {
 .post-card {
     display: flex;
     justify-content: start;
+    text-align: justify;
 }
     /* Set margin to card with elements within the card  */
 .post-card {
@@ -372,6 +372,9 @@ a:hover {
 }
 
     /* post card image */
+figure {
+    margin: auto 0;
+}
 .post-card > img {
     aspect-ratio: 2/1;              
     border-radius: 10px;
@@ -380,13 +383,6 @@ a:hover {
     width: 30%; 
 }
 
-.post-card > img {
-    width: 30%;              
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center; 
-    aspect-ratio: 2/1;
-}
 
     /* post card details  */
 .post-card .post-details {       
@@ -401,8 +397,8 @@ a:hover {
     margin-bottom: -10px;
     /* border: 1px solid red; */
 }
-.post-card p {
-    margin-top: 0px;
+.post-card figcaption {
+    margin-bottom: 10px;
     text-align: left;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
@@ -554,3 +550,9 @@ a:hover {
     justify-content: space-around;
 }
 
+.width-100pct {
+    width: 100%;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
